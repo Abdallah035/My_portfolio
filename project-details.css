@@ -1,0 +1,105 @@
+.project-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  .head-info .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition:all 0.5s ;
+  }
+  .head-info .title:hover{
+    color: rgba(0, 0, 0, 0.767);
+  }
+  .container-project{
+    width:65%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5rem;
+  }
+
+.card-1{
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding:2rem;
+}
+.card-1 img{
+    width:100%;
+    height: 100%;
+    transition:0.5s ease-in-out;
+}
+.card-1 img:hover{
+    transform: scale(1.05);
+}
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+   /* FOOTER SECTION */
+  
+   footer {
+    height: 26vh;
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  footer p {
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left:30%;
+  }
+@media screen and (max-width: 1000px){
+   .container-project{
+    display: flex;
+    flex-direction: column;
+   }
+   .head-info .title{
+    font-size: 1rem;
+   }
+   .btn{
+    width:6rem;
+    padding:0.7rem;
+    border-radius: 1rem;
+   }
+ 
+}
